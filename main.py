@@ -18,8 +18,7 @@ async def start(event):
         await event.reply("Используйте команду /start")
     else:
         keyboard = [
-            [Button.text("a")],
-            [Button.text("b")]
+            [Button.text("a", resize=True), Button.text("b", resize=True)]
         ]
         await event.respond("Добро пожаловать в Текстовая игра жанра RPG.", buttons=keyboard)
 
