@@ -1,0 +1,4 @@
+.SIPI.json
+.config.py
+.idea/
+*.session*
