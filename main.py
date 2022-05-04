@@ -24,4 +24,10 @@ async def start(event):
         await event.respond("Добро пожаловать в Текстовая игра жанра RPG.", buttons=keyboard)
 
 
+@bot.on(events.NewMessage(pattern=r'^/help'))
+async def help_wiki(event):
+    await event.respond('''Данный бот имеет две кнопки:
+- a, которая пишет a
+- b, которая пишет b''')
+
 bot.run_until_disconnected()
